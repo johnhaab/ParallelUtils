@@ -9,6 +9,7 @@ import parallelmc.parallelutils.ParallelClassLoader;
 import parallelmc.parallelutils.ParallelModule;
 import parallelmc.parallelutils.ParallelUtils;
 import parallelmc.parallelutils.modules.expstorage.commands.DepositExperience;
+import parallelmc.parallelutils.modules.expstorage.commands.HelpExperience;
 import parallelmc.parallelutils.modules.expstorage.commands.WithdrawExperience;
 import parallelmc.parallelutils.modules.expstorage.events.EnderChestRightClick;
 
@@ -50,6 +51,7 @@ public class ExpStorage extends ParallelModule {
 
 		puPlugin.getCommand("depositexp").setExecutor(new DepositExperience(puPlugin, database));
 		puPlugin.getCommand("withdrawexp").setExecutor(new WithdrawExperience(puPlugin, database));
+		puPlugin.getCommand("helpexp").setExecutor(new HelpExperience(puPlugin));
 	}
 
 	@Override

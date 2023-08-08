@@ -33,7 +33,7 @@ public class EnderChestRightClick implements Listener {
 					@Override
 					public void run() {
 						int totalExp = db.getExpForPlayer(player.getUniqueId().toString());
-						ParallelChat.sendMessageTo(player, "You currently have " + totalExp + " stored experience.");
+						ParallelChat.sendMessageTo(player, "You currently have " + totalExp + " stored experience, use /helpexp to learn more.");
 					}
 				});
 			}
